@@ -6,10 +6,6 @@ import ReplyMessage from "./ReplyMessage/ReplyMessage";
 
 const Dialogs = (props) => {
 
-
-
-
-
     let dialogElements = props.dialog.map(d => <DialogItems name={d.name} id={d.id} image={d.image}/>);
 
     let messageElements = props.messages.map(m => <MessageItem message={m.message} reply={m.reply} image={m.image} replyImage={m.replyImage}/>);
