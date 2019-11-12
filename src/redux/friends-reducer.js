@@ -1,6 +1,6 @@
 
 const friendReducer = (state, action) => {
-
+    return state;
 };
 
 
