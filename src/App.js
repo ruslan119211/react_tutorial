@@ -1,5 +1,4 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './css/main.css';
 import Header from './component/Header/Header';
 import Nav from './component/Nav/Nav';
@@ -19,9 +18,8 @@ const App = (props) => {
             <Header/>
             <Nav friend={props.state.friendsItem.friends}/>
             <div className='content'>
-                <Route path='/profile' render={() => <Profile profile={props.state.profilePage.post}
-                                                              textAreaValue={props.state.profilePage.newText}
-                                                              dispatch={props.dispatch}/>}/>
+                <Route path='/profile' render={() => <Profile store={props.store}/>}
+                />
                 <Route path='/messages'
                        render={() => <Dialogs dialog={props.state.messagePage.dialogs}
                                               messages={props.state.messagePage.messages}
