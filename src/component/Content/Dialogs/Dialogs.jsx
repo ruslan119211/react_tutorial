@@ -33,7 +33,7 @@ const Dialogs = (props) => {
                 {messageElements}
                 <div className="replyBlock">
                     <textarea id="reply" rows="5" onChange={onMessageChange} ref={replyMessageElement}
-                      value={props.messageAreaValue}/>
+                      value={props.messageAreaValue} />
                     <button onClick={addReply}>Reply</button>
                 </div>
             </div>

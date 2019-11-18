@@ -59,7 +59,7 @@ let initialState = {
             image: 'https://scontent.fnlv1-1.fna.fbcdn.net/v/t1.0-9/66099921_2859613744112497_6160510964065107968_n.jpg?_nc_cat=108&_nc_oc=AQln_8GBo2o5Eci8tu07ki-iuCZ2StTnH_oILUvkwMR9dxRZCXX2gSWH__Yud43Ej5s&_nc_ht=scontent.fnlv1-1.fna&oh=e0f1669f8533a94292fce9731d314ec8&oe=5E5D133D',
         }
     ],
-    newMessage: 'Hello'
+    newMessage: 'Enter you message'
 };
 
 const dialogReducer = (state = initialState, action) => {
