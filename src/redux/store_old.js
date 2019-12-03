@@ -3,7 +3,7 @@ import dialogReducer from "./dialog-reducer";
 import friendReducer from "./friends-reducer";
 
 
-let store = {
+let store_old = {
     _state: {
         profilePage: {
             post: [
@@ -126,6 +126,6 @@ let store = {
 
 
 
-export default store;
-window.store = store;
+export default store_old;
+window.store = store_old;
 //Store OOP

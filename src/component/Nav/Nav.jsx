@@ -4,8 +4,8 @@ import FriendItem from "../Content/Friend/itemFriend/FriendsItem";
 
 
 const Nav = (props) =>{
-
-    let friends = props.friend.slice(0, 3).map(f => <FriendItem name={f.name} id={f.id} image={f.image} />);
+    let state = props.friendsItem;
+    let friends = state.friends.slice(0, 3).map(f => <FriendItem name={f.name} id={f.id} key={f.id} image={f.image} />);
 
     return(
         <div className="nav">

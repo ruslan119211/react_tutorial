@@ -8,15 +8,16 @@ import {Route} from "react-router-dom";
 import News from "./component/Content/News/News";
 import Music from "./component/Content/Music/Music";
 import Setting from "./component/Content/Setting/Setting";
-import Friends from "./component/Content/Friend/FriendPage";
 import DialogsContainer from "./component/Content/Dialogs/DialogsContainer";
+import FriendsContainer from "./component/Content/Friend/FriendPageContainer";
+import NavContainer from "./component/Nav/NavContainer";
 
 
 const App = (props) => {
     return (
         <div className="app-wrapper">
             <Header/>
-            <Nav friend={props.state.friendsItem.friends}/>
+            <NavContainer/>
             <div className='content'>
                 <Route path='/profile' render={() => <Profile/>}/>
                 <Route path='/messages'
@@ -24,7 +25,7 @@ const App = (props) => {
                 <Route path='/news' render={() => <News/>}/>
                 <Route path='/music' render={() => <Music/>}/>
                 <Route path='/setting' render={() => <Setting/>}/>
-                <Route path='/friends' render={() => <Friends friend={props.state.friendsItem.friends}/>}/>
+                <Route path='/friends' render={() => <FriendsContainer/>}/>
 
             </div>
             <Footer/>
