@@ -1,7 +1,6 @@
 import React from 'react';
 import './css/main.css';
 import Header from './component/Header/Header';
-import Nav from './component/Nav/Nav';
 import Profile from './component/Content/Profile/Profile';
 import Footer from './component/Footer/Footer';
 import {Route} from "react-router-dom";
@@ -11,6 +10,7 @@ import Setting from "./component/Content/Setting/Setting";
 import DialogsContainer from "./component/Content/Dialogs/DialogsContainer";
 import FriendsContainer from "./component/Content/Friend/FriendPageContainer";
 import NavContainer from "./component/Nav/NavContainer";
+import UsersContainer from "./component/Content/Users/UsersContainer";
 
 
 const App = (props) => {
@@ -26,6 +26,7 @@ const App = (props) => {
                 <Route path='/music' render={() => <Music/>}/>
                 <Route path='/setting' render={() => <Setting/>}/>
                 <Route path='/friends' render={() => <FriendsContainer/>}/>
+                <Route path='/users' render={() => <UsersContainer/>}/>
 
             </div>
             <Footer/>

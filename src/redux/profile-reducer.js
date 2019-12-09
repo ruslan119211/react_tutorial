@@ -3,12 +3,12 @@ const ADD_POST = 'ADD-POST';
 
 let initialState = {
     post: [
-        {id: 1, message: 'Hi! What are you duing?', cauntLikes: 10},
-        {id: 2, message: 'My first post', cauntLikes: 12},
-        {id: 3, message: 'google', cauntLikes: 45},
-        {id: 4, message: 'My first post', cauntLikes: 5},
-        {id: 5, message: 'My first post', cauntLikes: 5},
-        {id: 6, message: 'My  post', cauntLikes: 48},
+        {id: 1, message: 'Hi! What are you duing?', countLikes: 10},
+        {id: 2, message: 'My first post', countLikes: 12},
+        {id: 3, message: 'google', countLikes: 45},
+        {id: 4, message: 'My first post', countLikes: 5},
+        {id: 5, message: 'My first post', countLikes: 5},
+        {id: 6, message: 'My  post', countLikes: 48},
     ],
     newText: 'Ruslan test'
 };
@@ -22,7 +22,7 @@ const profileReducer = (state = initialState, action) => {
             let newPost = {
                 id: 7,
                 message: state.newText,
-                cauntLikes: 0
+                countLikes: 0
             };
             stateCopy = {
                 ...state,

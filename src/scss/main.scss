@@ -285,8 +285,9 @@ a {
           }
 
         }
-        .replyBlock{
-          #reply{
+
+        .replyBlock {
+          #reply {
             width: 100%;
             resize: none;
             padding: 0;
@@ -336,6 +337,66 @@ a {
 
     a {
       color: #28ff04;
+    }
+  }
+}
+
+//Fiend USERS
+.users-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .users-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+    width: 565px;
+    .left-block {
+      text-align: center;
+      .users-iamge {
+        width: 150px;
+        height: 150px;
+        border: 2px solid red;
+        border-radius: 100px;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      button {
+        background: #efff00;
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+        color: #b30000;
+        text-transform: uppercase;
+        font-weight: 600;
+        border: 2px solid;
+        cursor: pointer;
+      }
+    }
+
+    .right-block {
+      background: white;
+      border: 1px solid #b30000;
+      border-radius: 5px;
+      margin-left: 20px;
+      width: 60%;
+      display: grid;
+      grid-template-columns: 3fr 9fr;
+      .name-users {
+
+      }
+
+      .status-users {
+
+      }
+
+      .location-users {
+
+      }
     }
   }
 }
