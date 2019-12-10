@@ -367,7 +367,7 @@ a {
       }
       button {
         background: #efff00;
-        margin: 10px 0;
+        margin: 10px 0 0;
         width: 100%;
         text-align: center;
         color: #b30000;
@@ -383,9 +383,9 @@ a {
       border: 1px solid #b30000;
       border-radius: 5px;
       margin-left: 20px;
-      width: 60%;
-      display: grid;
-      grid-template-columns: 3fr 9fr;
+      width: 100%;
+      //display: grid;
+      //grid-template-columns: 3fr 9fr;
       .name-users {
 
       }
