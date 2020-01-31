@@ -237,6 +237,7 @@ a {
       .users-content .users-item .left-block .users-iamge {
         width: 150px;
         height: 150px;
+        background: #fff;
         border: 2px solid red;
         border-radius: 100px;
         overflow: hidden; }
