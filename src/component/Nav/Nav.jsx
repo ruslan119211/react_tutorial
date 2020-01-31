@@ -29,6 +29,9 @@ const Nav = (props) =>{
                     <li className="item">
                         <NavLink to="/friends">Friends</NavLink>
                     </li>
+                    <li className='item'>
+                        <NavLink to="/users">Find users</NavLink>
+                    </li>
                 </ul>
                 <div className="friendsBlock">
                     {friends}
