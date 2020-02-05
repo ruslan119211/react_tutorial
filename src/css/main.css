@@ -110,19 +110,24 @@ a {
             position: absolute;
             right: 30px;
             bottom: 5px; }
-            .app-wrapper .content .profile .PostBlock .MyPosts .item .btn_like a {
-              color: #fff; }
+            .app-wrapper .content .profile .PostBlock .MyPosts .item .btn_like button {
+              color: #fff;
+              border: 0;
+              cursor: pointer;
+              background: red; }
             .app-wrapper .content .profile .PostBlock .MyPosts .item .btn_like span {
-              color: white;
-              border: 1px solid #fff;
-              border-radius: 100px;
-              width: 25px;
+              color: #ff0026;
+              border: 1px solid #ff0300;
+              width: auto;
+              min-width: 33px;
               height: 25px;
               display: inline-block;
+              padding: 3px 10px;
               text-align: center;
               line-height: 25px;
               margin-left: 6px;
-              background: red; }
+              background: #ffd333;
+              font-weight: bold; }
     .app-wrapper .content .dialogs {
       display: grid;
       grid-template-columns: 3fr 9fr;
@@ -227,6 +232,21 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .users-content .pagination {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(25, 1fr);
+    text-align: center;
+    margin-bottom: 20px; }
+    .users-content .pagination span {
+      background: white;
+      font-size: 18px;
+      cursor: pointer;
+      padding: 3px;
+      transition: .3s ease-in-out; }
+      .users-content .pagination span.page_selected {
+        color: #fff;
+        background: #b30000; }
   .users-content .users-item {
     display: flex;
     flex-direction: row;
@@ -237,10 +257,10 @@ a {
       .users-content .users-item .left-block .users-iamge {
         width: 150px;
         height: 150px;
-        background: #fff;
         border: 2px solid red;
         border-radius: 100px;
-        overflow: hidden; }
+        overflow: hidden;
+        background: #fff; }
         .users-content .users-item .left-block .users-iamge img {
           width: 100%;
           height: 100%;
