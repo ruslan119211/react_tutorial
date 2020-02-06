@@ -36,6 +36,7 @@ class UsersContainer extends React.Component {
     onPageChanged = (pageNumber) => {
         this.props.setCurrentPage(pageNumber);
         this.props.toggleIsFetchingAC(true);
+
         axios.get(`https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`)
             .then(response => {
                 this.props.toggleIsFetchingAC(false);
@@ -52,7 +53,7 @@ class UsersContainer extends React.Component {
                 currentPage={this.props.currentPage}
                 users={this.props.users}
                 follow={this.props.follow}
-                unfollow={this.props.unfollow}
+                unFollow={this.props.unFollow}
                 onPageChanged={this.onPageChanged}
 
             />
@@ -75,7 +76,7 @@ let mapDispatchToProps = (dispatch) => {
         follow: (userId) => {
             dispatch(followAC(userId));
         },
-        unfollow: (userId) => {
+        unFollow: (userId) => {
             dispatch(unFollowAC(userId));
         },
         setUsers: (users) => {

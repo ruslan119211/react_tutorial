@@ -1,7 +1,25 @@
 a {
   text-decoration: none;
 }
-
+//common style
+.preloader_container{
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  .preloader_img{
+    max-width: 100%;
+    width: 10%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
 .app-wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -346,7 +364,9 @@ a {
 }
 
 //Fiend USERS
+
 .users-content {
+
   display: flex;
   flex-direction: column;
   align-items: center;
